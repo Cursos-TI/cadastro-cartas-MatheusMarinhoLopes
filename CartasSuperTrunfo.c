@@ -110,4 +110,7 @@ int main() {
         printf("\n");
 
 return 0;
+
+      //escrevi maior parte do código no visual studio code e colei aqui porque tive problemas de conexão no github codespaces
+
 } 
