@@ -34,7 +34,7 @@ int main() {
         scanf(" %c", &estado1);
 
         printf("Digite o codigo da carta(ex: A01): ");
-        scanf(" %s", &codigo1);
+        scanf(" %s", codigo1);
 
         printf("Digite o nome da cidade: ");
         scanf(" %[^\n]", &cidade1);
@@ -55,15 +55,15 @@ int main() {
 
         // cadastrando a carta 2
 
+         int c;
+         while ((c = getchar()) != '\n' && c != EOF) {} // usei essas duas linhas de codigo para corrigir o erro de não impressão dos resultados
+
         printf("Cadastro da Carta 2: \n");
-
-        
-
         printf("Digite o estado(A-H): ");
         scanf(" %c", &estado2);
 
         printf("Digite o codigo da carta(ex: B03): ");
-        scanf(" %s", &codigo2);
+        scanf(" %s", codigo2);
 
         printf("Digite o nome da cidade: ");
         scanf(" %[^\n]", &cidade2);
@@ -81,7 +81,33 @@ int main() {
         scanf(" %d", &pontosTuristicos2);
 
         printf("\n");
+
   // Área para exibição dos dados da cidade
+  // saída dos dados cadastrados da carta 1
+
+        printf("    Carta 1    \n");
+        printf("Estado: %c\n", estado1);
+        printf("Codigo: %s\n", codigo1);
+        printf("Cidade: %s\n", cidade1);
+        printf("População: %d\n", populacao1);
+        printf("Área: %.2f km²\n", area1);
+        printf("PIB: %.2f bilhões de reais\n", pib1);
+        printf("Pontos Turísticos: %d\n", pontosTuristicos1);
+
+        printf("\n");
+
+        // saída dos dados cadastrados da carta 2
+
+        printf("    Carta 2    \n");
+        printf("Estado: %c\n", estado2);
+        printf("Codigo: %s\n", codigo2);
+        printf("Cidade: %s\n", cidade2);
+        printf("População: %d\n", populacao2);
+        printf("Área: %.2f km²\n", area2);
+        printf("PIB: %.2f bilhões de reais\n", pib2);
+        printf("Pontos Turísticos: %d\n", pontosTuristicos2);
+
+        printf("\n");
 
 return 0;
 } 
